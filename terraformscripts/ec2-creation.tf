@@ -8,8 +8,8 @@ resource "aws_instance" "EC2Instance"{
   instance_type = "t2.micro"
   key_name = "mykp1"
   security_groups = ["launch-wizard-1"]
-  tags{
-  Name = "tsttomserv"
+  tags = {
+    Name = "tsttomserv"
   }
 
 }
